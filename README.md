@@ -1,67 +1,64 @@
 # customer-segmentation-kmeans
-🛍️ Customer Segmentation using K-Means & Streamlit
-📌 Project Overview
+🛍️ Customer Segmentation using K-Means & Hierarchical Clustering
 
-This project uses K-Means Clustering to segment mall customers based on their Annual Income and Spending Score.
-The trained model is deployed using an interactive Streamlit web application that predicts the customer segment in real time and visualizes cluster groups.
+This project demonstrates how unsupervised machine learning can be used to segment customers based on their Annual Income and Spending Score.
+It includes a compact Streamlit web app that predicts customer groups using both K-Means and Hierarchical Clustering.
 
-🔍 Problem Statement
+🚀 Features
 
-Businesses often treat all customers the same. This leads to ineffective marketing strategies.
-This project solves that by grouping customers into meaningful segments so companies can target customers more effectively.
+Live customer group prediction
 
-⚙️ Solution Approach
+Uses K-Means and Hierarchical Clustering
 
-Load and preprocess the dataset
+Clean and mobile-friendly UI
 
-Apply K-Means clustering
+Business-ready customer categories
 
-Use the Elbow Method to find the optimal number of clusters
+Simple sliders for input
 
-Train the model with 5 clusters
-
-Deploy the model using Streamlit
+Fast & lightweight
 
 📊 Customer Segments
-Cluster	Group Name	Description
-0	Low Value Customers	Low income & low spending
-1	Careful Customers	High income but low spending
-2	Potential Loyalists	Low income but high spending
-3	Regular Customers	Average income & spending
-4	Premium Customers	High income & high spending
+Cluster	Category	Description
+1	Budget	Low income, low spending
+2	Careless	Low income, high spending
+3	Regular	Average income & spending
+4	Premium	High income, high spending
+5	Savers	High income, low spending
 🛠 Tech Stack
 
 Python
 
-Pandas, NumPy
+Pandas
 
 Scikit-learn
 
-Matplotlib
-
 Streamlit
 
-📂 Project Structure
-customer_segmentation/
-│
-├── Mall_Customers.csv
-├── kmeans_model.pkl
-├── app.py
-└── README.md
-
-▶ How to Run the Project
-pip install pandas numpy scikit-learn matplotlib streamlit
+▶ How to Run
+pip install streamlit pandas scikit-learn
 streamlit run app.py
 
-🎯 Business Impact
+📁 Files
+customer_segmentation/
+│
+├── app.py
+├── kmeans_model.pkl
+└── Mall_Customers.csv
 
-Identifies high-value customers
+🌟 Learning Outcomes
 
-Improves marketing efficiency
+Unsupervised learning concepts
 
-Helps design personalized offers
+Elbow Method
 
-Supports data-driven business decisions
+K-Means clustering
+
+Hierarchical clustering
+
+Data visualization
+
+ML web app deployment
 
 👩‍💻 Author
 
